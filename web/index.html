@@ -1,0 +1,1427 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GCC</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link href="assets/dist/css/cover.css" rel="stylesheet" type="text/css" />
+        <link href="assets/dist/css/carousel.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .b-example-divider {
+                height: 3rem;
+                background-color: rgba(0, 0, 0, .1);
+                border: solid rgba(0, 0, 0, .15);
+                border-width: 1px 0;
+                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+
+            .bi {
+                vertical-align: -.125em;
+                fill: currentColor;
+            }
+
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .imgRedonda {
+                width: 300px;
+                height: 300px;
+                border-radius: 150px;
+            }
+        </style>
+    </head>
+
+    <body class="d-flex h-100 text-center text-bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+                <div>
+                    <h3 class="float-md-start mb-0">GCC</h3>
+                    <nav class="nav nav-masthead justify-content-center float-md-end"> <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a> <a class="nav-link fw-bold py-1 px-0" href="aboutus.html">About Us</a> </nav>
+                </div>
+            </header>
+            <hr>
+            <main class="px-3">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators"> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button> </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <img src="img/ANTEC TORQUE WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/AZZA REGIS WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/COUGAR CONQUER WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/IN WIN D-FRAME WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/JONSBO TR03-G WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/KEDIERS C580 WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/STEAMCOM ST-DB4T DB4 WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/THERMALTAKE CORE P90 WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/THERMALTAKE TOWER 100 WALL.jpg" class="d-block w-100"> </div>
+                        <div class="carousel-item"> <img src="img/VETROO K1 PANGOLIN WALL.jpg" class="d-block w-100"> </div>
+                    </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+                </div>
+                <div class="container marketing">
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading fw-normal lh-1">ELEGANCE IN YOUR SETUP. <span class="text-muted">It’ll blow your mind.</span> </h2>
+                                <p class="lead">GIVE THAT TOUCH OF ELEGANCE TO YOUR SETUP WITH OUR AMAZING OPTIONS IN CASES FOR PC.</p>
+                            </div>
+                            <div class="col-md-5"> <img src="img/DREAM PC.jpg" width="100%" height="100%" fill="#eee" /> </div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-5"> <img src="img/BEST MATERIALS.jpg" width="100%" height="100%" fill="#eee" /> </div>
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading fw-normal lh-1">THE MOST DURABLE CASE. <span class="text-muted">You'll find out for yourself.</span> </h2>
+                                <p class="lead">ACQUIRE THE MOST RESISTANT PC CASES ON THE MARKET, NOTHING SCRATCHES OR BEATS THEM, MADE WITH THE MOST RESISTANT AND DURABLE ALLOYS. </p>
+                            </div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading fw-normal lh-1">CASE TO YOUR MEASURE. <span class="text-muted">You'll be satisfied.</span></h2>
+                                <p class="lead">YOU CAN SELECT THE COLORS OF YOUR CASE AS WELL AS THE INTERNAL AND EXTERNAL MEASUREMENTS, THE MATERIALS AND THE DECORATIVE ACCESSORIES FOR YOUR PERFECT PC.</p>
+                            </div>
+                            <div class="col-md-5"> <img src="img/FAST PC.jpg" width="110%" height="110%" fill="#eee" /> </div>
+                        </div>
+                        <hr class="featurette-divider">
+                    </div>
+                    <div class="row">
+                        <!-- Begining 1st Product -->
+                        <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/ANTEC TORQUE.jpg" width="140" height="140" />
+                            <h2 class="fw-normal">ANTEC TORQUE</h2>
+                            <p>Torque, a commanding mid tower with a forward-tilted motherboard position, aggressive lines, and plenty of features designed for performance-heavy builds, merges precision cut aluminum panels in high contrast crimson and gunmetal to bring an augmented experience to your desktop.</p>
+                            <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View Details</a></p> <!-- Modal Details -->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <h1 class="text-center">ANTEC TORQUE</h1>
+                                        <hr>
+                                        <div class="modal-body">
+                                            <p> <img src="img/ANTEC TORQUE 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/ANTEC TORQUE 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/ANTEC TORQUE 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/ANTEC TORQUE 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/ANTEC TORQUE 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <h1>$388.42</h1>
+                                            <hr>
+                                            <h2>Technical Details</h2>
+                                            <table class="table text-bg-dark">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Brand</td>
+                                                        <td>Antec</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Motherboard Compatability</td>
+                                                        <td>ATX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case Type</td>
+                                                        <td>Mid Tower</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color</td>
+                                                        <td>Red/Black</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Material</td>
+                                                        <td>Aluminum</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Series</td>
+                                                        <td>Torque</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Weight</td>
+                                                        <td>20.61 Pounds</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Dimensions LxWxH</td>
+                                                        <td>24.44 x 11.22 x 25.35 inches</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>About this item</h2>
+                                            <p> PRECISION CUT CRAFTSMANSHIP: Comprised of 14 aluminum panels, ensure perfection in every curve and edge </p>
+                                            <p> UNRIVALED PERFORMANCE AND BEAUTY: 4 mm tempered glass panels on both sides, show off your gear </p>
+                                            <p> EXTENSIVE LIQUID COOLING SUPPORT: Enables 360mm installation with ease in the front and the top </p>
+                                            <p> USB 3. 1 TYPE-C READY: Enjoy higher data transfer speeds and compatibility with next-gen peripherals. </p>
+                                            <p> MOTHERBOARD SUPPORT: E-ATX(Up to 12"x11"), ATX, Micro-ATX, ITX </p>
+                                        </div>
+                                        <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"> Check Order </button> </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Modal Consult -->
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <div class="modal-body">
+                                            <div class="row justify-content-center ">
+                                                <div class="card-header p-0">
+                                                    <div class="bg-dark text-white text-center py-2 ">
+                                                        <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <form action="thanks.html">
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                </div> <input type="text" class="form-control bg-dark text-white" placeholder="ANTEC TORQUE" readonly="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Details </button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End 1st Product -->
+                        <!-- Begining 2nd Product -->
+                        <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/AZZA REGIS.jpg" width="140" height="140" />
+                            <h2 class="fw-normal">AZZA REGIS</h2>
+                            <p>The AZZA REGIS is a luxury ATX cube enclosure for PC connoisseurs looking for a unique chassis to showcase their system. The distinctly atypical design features mind-bending illusory effects, premium materials, and a refined sculptural form that always stands out in the room.</p>
+                            <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglear" role="button">View Details</a></p> <!-- Modal Details -->
+                            <div class="modal fade" id="exampleModalTogglear" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <h1 class="text-center">AZZA REGIS</h1>
+                                        <hr>
+                                        <div class="modal-body">
+                                            <p> <img src="img/AZZA REGIS 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/AZZA REGIS 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/AZZA REGIS 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/AZZA REGIS 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/AZZA REGIS 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <h1>$399.99</h1>
+                                            <hr>
+                                            <h2>Technical Details</h2>
+                                            <table class="table text-bg-dark">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Brand</td>
+                                                        <td>‎AZZA</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Motherboard Compatability</td>
+                                                        <td>Micro ATX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case Type</td>
+                                                        <td>Mid Tower</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color</td>
+                                                        <td>Black/Gold</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Material</td>
+                                                        <td>Aluminum</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Series</td>
+                                                        <td>AZZA REGIS 902</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Weight</td>
+                                                        <td>27.6 Pounds</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Dimensions LxWxH</td>
+                                                        <td>20.83 x 18.94 x 24.02 inches</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>About this item</h2>
+                                            <p> MORE THAN JUST A PC CASE: The REGIS is a luxury ATX cube enclosure that elevates chassis aesthetics to sculptural levels with its pure form & illusory infinity mirror lighting; includes 17 ARGB controller effects & 3-pin motherboard synchronization </p>
+                                            <p> SUPERB CRAFTSMANSHIP: Tempered-glass & brushed-aluminum panels are tool-free detachable, while the flawless smoke-grey surfaces are framed with gold-trim edges; a premium aluminum stand bolts the cube in place at an optimal viewing angle </p>
+                                            <p> VOLUMINOUS INTERIOR: The easy-to-access interior supports ATX, micro-ATX, and mini-ITX motherboards; GPU cards can be mounted vertically (3 slots, max. 320mm) or horizontally (7 slots, max. 336mm); comes with interchangeable 2.5" & 3.5" drive bays </p>
+                                            <p> SUPPORTS AIR & LIQUID-COOLING: Ventilation includes a 140mm rear fan and removeable side brackets for up to 4 x 120/140mm case fans on the undersides & clearance for a 210mm CPU cooler; liquid cooling options include space for 2 x 240/280mm radiators </p>
+                                            <p> ELEVATED DESIGN: The front I/O features convenient power & lighting buttons, HD audio, USB 3.1 Type-C & 2 x USB 3.0 Type-A ports; the AZZA Hub supports 7 x ARGB (3-pin) devices & up to 6 x PWM fans, and attaches magnetically to the interior </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2ar" data-bs-toggle="modal"> Check Order </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Modal Consult -->
+                            <!-- CHANGE id & aria-labelledby -->
+                            <div class="modal fade" id="exampleModalToggle2ar" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2ar" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <div class="modal-body">
+                                            <div class="row justify-content-center ">
+                                                <div class="card-header p-0">
+                                                    <div class="bg-dark text-white text-center py-2 ">
+                                                        <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <form action="thanks.html">
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="AZZA REGIS" readonly="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglear" data-bs-toggle="modal">Back to Details </button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End 2nd Product -->
+                        <!-- Begining 3th Product -->
+                        <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/COUGAR CONQUER.jpg" width="140" height="140" />
+                            <h2 class="fw-normal">COUGAR CONQUER</h2>
+                            <p>To be extraordinary and exceptional. Conquer builds on Cougar's exceptional and consistent design DNA with armor aesthetics, aluminum framing, and military styling. Through the innovative aluminum alloy frame to forge an ultimate and elegant new masterpiece.</p>
+                            <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglearcc" role="button">View Details</a></p> <!-- Modal Details -->
+                            <div class="modal fade" id="exampleModalTogglearcc" aria-hidden="true" aria-labelledby="exampleModalToggleLabelcc" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <h1 class="text-center">COUGAR CONQUER</h1>
+                                        <hr>
+                                        <div class="modal-body">
+                                            <p> <img src="img/COUGAR CONQUER 1.png" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/COUGAR CONQUER 2.png" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/COUGAR CONQUER 3.png" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/COUGAR CONQUER 4.png" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            <p> <img src="img/COUGAR CONQUER 5.png" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <h1>399.45</h1>
+                                            <hr>
+                                            <h2>Technical Details</h2>
+                                            <table class="table text-bg-dark">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Brand</td>
+                                                        <td>Cougar gaming</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Motherboard Compatability</td>
+                                                        <td>ATX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case Type</td>
+                                                        <td>Mid Tower</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color</td>
+                                                        <td>Black/Orange</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Material</td>
+                                                        <td>Aluminum</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Series</td>
+                                                        <td>Cougar Series</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Weight</td>
+                                                        <td>30.9 Pounds</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Item Dimensions LxWxH</td>
+                                                        <td>10 x 27 x 23 inches</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>About this item</h2>
+                                            <p> Ultimate Crafted Detail- Based on outstanding and consistent with COUGAR military design DNA and truss-aesthetics. All the aluminum alloy frame is made meticulously with CNC mill for refining every design detail. </p>
+                                            <p> Unique Aluminum Framing ＋ Immaculate Tempered Glass- The open-frame concept composed of strengthened aluminum alloy frame with two 5mm thick tempered glass side panels to be the most stylish design. </p>
+                                            <p> Superior Expandability- In addition, you can showcase your high-end and powerful gaming system including full-size graphics cards up to 350mm with amazing vision beyond your imagination. COUGAR Conquer is an ultimate masterpiece in of your dreams. </p>
+                                            <p> Extremely Cooling Performance- Cooling is a key factor for gamers, overclockers and PC enthusiasts in general, Conquer offers all they could ask for. With support for 360mm water cooling radiator at top and for 240mm water cooling radiator at front for superior air-flow and cooling performance. </p>
+                                            <p> Design for Modders- Conquer's unique aluminum framing design breaks away from traditional cases. It provides an easy way to build and modify the case. With its superior expandability, modders will have unprecedented levels of freedom to create a dream case beyond imagination. </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2cc" data-bs-toggle="modal"> Check Order </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Modal Consult -->
+                            <!-- CHANGE id & aria-labelledby -->
+                            <div class="modal fade" id="exampleModalToggle2cc" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2cc" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content text-bg-dark">
+                                        <div class="modal-body">
+                                            <div class="row justify-content-center ">
+                                                <div class="card-header p-0">
+                                                    <div class="bg-dark text-white text-center py-2 ">
+                                                        <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <form action="thanks.html">
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="COUGAR CONQUER" readonly="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="input-group mb-2 ">
+                                                                <div class="input-group-prepend ">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-2">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglearcc" data-bs-toggle="modal">Back to Details </button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End 3th Product -->
+                        <!-- 22222222222222222222222222222222222222222 -->
+                        <div class="row">
+                            <!-- Begining 4th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/IN WIN D-FRAME.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">IN WIN D-FRAME</h2>
+                                <p>The design concept for D-Frame 2.0 originates from the freedom, individuality and impulsive nature of off-road motorcycles. The combination of steel tubing, anti-flip foot pads with deep tire treads, a power supply in the shape of an air-cooled engine and tempered glass is perfect fusion of art and technology. Expertly bent tubing is entirely crafted by hand.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggleariwdf" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalToggleariwdf" aria-hidden="true" aria-labelledby="exampleModalToggleLabeliwdf" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">IN WIN D-FRAME</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/IN WIN D-FRAME 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/IN WIN D-FRAME 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/IN WIN D-FRAME 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/IN WIN D-FRAME 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/IN WIN D-FRAME 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>$219.99</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>IN WIN</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>Extended ATX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Full Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>Black/Green</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Tempered Glass, Aluminum, Alloy Steel</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>In Win Series</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>49.5 Pounds</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>28.6 x 10.4 x 21.6 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p> Ultimate Crafted Detail- Based on outstanding and consistent with COUGAR military design DNA and truss-aesthetics. All the aluminum alloy frame is made meticulously with CNC mill for refining every design detail. </p>
+                                                <p> Unique Aluminum Framing ＋ Immaculate Tempered Glass- The open-frame concept composed of strengthened aluminum alloy frame with two 5mm thick tempered glass side panels to be the most stylish design. </p>
+                                                <p> Superior Expandability- In addition, you can showcase your high-end and powerful gaming system including full-size graphics cards up to 350mm with amazing vision beyond your imagination. COUGAR Conquer is an ultimate masterpiece in of your dreams. </p>
+                                                <p> Extremely Cooling Performance- Cooling is a key factor for gamers, overclockers and PC enthusiasts in general, Conquer offers all they could ask for. With support for 360mm water cooling radiator at top and for 240mm water cooling radiator at front for superior air-flow and cooling performance. </p>
+                                                <p> Design for Modders- Conquer's unique aluminum framing design breaks away from traditional cases. It provides an easy way to build and modify the case. With its superior expandability, modders will have unprecedented levels of freedom to create a dream case beyond imagination. </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2iwdf" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2iwdf" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2iwdf" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="IN WIN D-FRAME" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalToggleariwdf" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 4th Product -->
+                            <!-- Begining 5th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/JONSBO TR03-G.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">JONSBO TR03-G</h2>
+                                <p>TR03 is a high-end ATX case developed based on triangular elements, the triangle hardware is made with 4MM thickness aluminum by innovative extrusion process. The main structure adopts structural integrated process with inner steel and outer aluminum to ensure the structural strength and avoid the transmission of resonance noise.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglearjtr" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalTogglearjtr" aria-hidden="true" aria-labelledby="exampleModalToggleLabeljtr" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">JONSBO TR03-G</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/JONSBO TR03-G 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/JONSBO TR03-G 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/JONSBO TR03-G 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/JONSBO TR03-G 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/JONSBO TR03-G 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>$619.99</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>HELLOLAND</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>Micro ATX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Full Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>Silver/Black</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Tempered Glass, Aluminum, Metal</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>JONSBO TR</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>‎38.2 pounds</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>‎30.5 x 27.2 x 12.8 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p> JONSBO TR Series Case TR03 is designed by JONSBO for hard core gamers. With the special Equilateral Triangle design, TR03 will make your PC unique, special, and good looking. It’s built with high-end 4mm metal which is way higher than the industry standards of 0.5-1mm, weighing over whopping 33 lbs. TR03 is built on main structure of Steel covered by top class aluminum plates. </p>
+                                                <p> Designed for Heavy Graphics Cards Nowadays, GPU is becoming heavier. TR03 has built in GPU brackets for heavy high end GPU like RTX 3080 or RTX 3090. This prevents GPU from bent the PCIE Slots or damage golden fingers during moving. </p>
+                                                <p> Innovative Air Walls design. The design of ventilation walls from server chassis is being employed for TR03, which allows users to install fans to empower the air flow for better cooling of high-end CPU and GPU. </p>
+                                                <p> Dimensions: Case Dimension: 595mm(H) * 673mm(L) * 238mm(W) 32.5mm Interval at back for cable management </p>
+                                                <p> Component Support: Motherboard: Support ATX / M-ATX / ITX Motherboards form factors GPU: Video Card Max Length Support: 320 mm(460mm with the Fan&SSD Brackets removed ) PSU: Support Standard ATX PSII PSU with max Length of 180mm Storage: 2.5or3.5 *5 3.5 Only Hard Drive brackets*1 </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2jtr" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2jtr" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2jtr" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="JONSBO TR03-G" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglearjtr" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 5th Product -->
+                            <!-- Begining 6th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/KEDIERS C580.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">KEDIERS C580</h2>
+                                <p> C580 PC case is pre-installed 2 RGB luminous light boards. The unique open design can keep the GPU Temperature continuously low,making your computer work more smoothly. aming case is equipped 2 * 4mm thick tempered glass, which can clearly see the RGB lighting and the components in the building, Creating a good gaming atmosphere.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglearkc" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalTogglearkc" aria-hidden="true" aria-labelledby="exampleModalToggleLabelkc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">KEDIERS C580</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/KEDIERS C580 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/KEDIERS C580 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/KEDIERS C580 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/KEDIERS C580 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/KEDIERS C580 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>$159.99</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>KEDIERS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>Mini ITX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Mid Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>White</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Tempered Glass, Aluminum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>C Series</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>‎25.6 pounds</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>24.5 x 21.5 x 7.5 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p>[Powerful cooling ]-- C580 PC case is pre-installed 2 RGB luminous light boards. The unique open design can keep the GPU Temperature continuously low,making your computer work more smoothly.</p>
+                                                <p>[2 Tempered glass]-- C580 gaming case is equipped 2 * 4mm thick tempered glass, which can clearly see the RGB lighting and the components in the building, Creating a good gaming atmosphere.</p>
+                                                <p>[SYNC RGB]-- KEDIERS Tower Case light boards can be controlled by computer software/remote control (equipped).</p>
+                                                <p>[Good after-sale guarantee]-- KEDIERS accepts all returns within the product’s eligible return period. This applies to all products sold and shipped by KEDIERS. Shop with confidence with Hassle-Free Returns.</p>
+                                                <p>[Remarkable Expansion]-- This decent ATX Mid Tower Gaming Computer Case supports motherboards up to ATX, Micro-ATX, Mini-ITX; Back Bays: 1x 3.5'' HDD's and 2 x 2.5'' SSD's. Suitable for official 3090, 3080, 3070,3060 GPU.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2kc" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2kc" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2kc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="KEDIERS C580" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglearkc" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 6th Product -->
+                        </div> <!-- 333333333333333333333333333333333333333333333 -->
+                        <div class="row">
+                            <!-- Begining 7th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/STEAMCOM ST-DB4T DB4.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">STEAMCOM ST-DB4T DB4</h2>
+                                <p>The DB4 is a design masterpiece featuring a bi-symmetrical design that blurs the lines between technology and art. Every element of this case subtly screams premium, from the 13mm thick extruded aluminium side panels to the precision CNC’d internal frame, all perfectly blended together with our characteristically understated design tone.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglearsc" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalTogglearsc" aria-hidden="true" aria-labelledby="exampleModalToggleLabelsc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">STEAMCOM ST-DB4T DB4</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/STEAMCOM ST-DB4T DB4 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/STEAMCOM ST-DB4T DB4 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/STEAMCOM ST-DB4T DB4 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/STEAMCOM ST-DB4T DB4 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/STEAMCOM ST-DB4T DB4 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>$570.00</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>Streacom</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>Mini ITX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Low Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>Silver</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Aluminum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>ST Series</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>‎9.2 Kilograms</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>12 x 12 x 12 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p>Key to its design are the identical sides of the case which serve both as the striking monolithic exterior and the convection surface (or heat sink) for component cooling and is the basis of its fanless operation.</p>
+                                                <p>Motherboard compatibility has been addressed, the DB4 solves one of the biggest complexities of building a fanless case. With both the motherboard and side panels being parallel, the heat pipes run perpendicular, away from any components and in combination with the flexibility of the universal bracket, means that virtually all ITX motherboard are compatible with the case.</p>
+                                                <p>Our existing CPU mount has also been re-engineered to be adjustable and universally compatible with any socket. It now features a copper shim interface between the IHS and heat pipes which creates a more efficient all copper thermal path to the heat sink, greatly improving cooling performance.</p>
+                                                <p>To make assembly easier, all the side panels are removable, as is the motherboard tray, leaving an open frame with plenty of accessibility. Building on the innovation of our F12C, components are fitted using a universal bracket system that supports, drives, heat sink mounts and the ZF240, allowing components to be mounted anywhere along the frame of the case, delivering a truly modular and flexible layout.</p>
+                                                <p>The DB4 measures 260 x 260 x 270mm but still manages to accommodate an ITX motherboard, a dual-slot full-height PCI card (max 200mm length, 110mm height), up to 5 x 3.5” or 12 x 2.5” drives (lots of combinations in between), and can be powered by our Nano or ZeroFlex PSU solutions.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2sc" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2sc" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2sc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="STEAMCOM ST-DB4T DB4" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglearsc" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 7th Product -->
+                            <!-- Begining 8th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/THERMALTAKE CORE P90.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">THERMALTAKE CORE P90</h2>
+                                <p>Thermaltake has kicked open-frame chassis up to a notch and presented the Core P90 Tempered Glass Edition Mid-tower Chassis. The Core P90 TG boasts the case structure split into three compartments for graphic card, PSU and other cooling components.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggletc" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalToggletc" aria-hidden="true" aria-labelledby="exampleModalToggleLabeltc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">THERMALTAKE CORE P90</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/THERMALTAKE CORE P90 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/THERMALTAKE CORE P90 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/THERMALTAKE CORE P90 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/THERMALTAKE CORE P90 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/THERMALTAKE CORE P90 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>$199.99</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>Thermaltake</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>ATX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Mid Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>Black</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Tempered Glass</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>Core P Series</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>‎37.9 Pounds</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>18.5 x 18.5 x 24.2 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p>Tt LCS Certified Tt LCS Certified is a Thermaltake exclusive certification applied to only products that pass the design and hardcore enthusiast standards that a true LCS chassis should be held to. The Tt LCS certification was created so that we at Thermaltake can designate to all power users which chassis have been tested to be best compatible with extreme liquid cooling configurations to ensure you get the best performance from the best features and fitment.</p>
+                                                <p>A New Angle to PC Gaming Build from a different angle, isolating components for improved heat dissipation to give each component proper spacing for optimal cooling performance. Present and protect each side with 5mm thick tempered glass panels and extended glass mounts allow easy to clean maintenance.</p>
+                                                <p>3-Way Placement Layout Supporting 3-way placement layouts (Wall-mount, Vertical and Horizontal) angle your PC in multiple ways to accommodate users for a variety of configurations. With an Angled frame design, fit your PC like never before with the Core P90.</p>
+                                                <p>Make the Move to Modular Design The Core P90 enables users to freely build their system from the ground up with modular panels, racks, brackets, and pre-design mounting arrays. No more unreachable screw corners or gaps to enjoy even more space for your precious parts during installation or maintenance. 3.5” or 2.5” HDD Drive Compatible</p>
+                                                <p>Extended Hardware Support Supporting up to standard ATX form factor motherboards, go big with cooling fitment for CPU coolers up to 180mm in height, VGA lengths up to 320mm and PSU sizes up to 220mm in length. Add even more storage with up to 7 drive locations for 3.5” or 2.5” devices to lock and load games and media enthusiast look for.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2tc" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2tc" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2tc" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="THERMALTAKE CORE P90" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalToggletc" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 8th Product -->
+                            <!-- Begining 9th Product -->
+                            <div class="col-lg-4"> <img class="bd-placeholder-img rounded-circle" src="img/VETROO K1 PANGOLIN.jpg" width="140" height="140" />
+                                <h2 class="fw-normal">VETROO K1 PANGOLIN</h2>
+                                <p>The K1 case was designed according to the shape of the pangolin, it has dual tempered glass side panels and scaly panel, which makes your case more attractive and provide better airflow. It compatible with ATX, M-ATX, ITX motherboard, and supports up to 7pcs 120mm fans and max 360mm radiator, which can keep your case cooling all the time.</p>
+                                <p><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglevk" role="button">View Details</a></p> <!-- Modal Details -->
+                                <div class="modal fade" id="exampleModalTogglevk" aria-hidden="true" aria-labelledby="exampleModalToggleLabelvk" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <h1 class="text-center">VETROO K1 PANGOLIN</h1>
+                                            <hr>
+                                            <div class="modal-body">
+                                                <p> <img src="img/VETROO K1 PANGOLIN 1.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/VETROO K1 PANGOLIN 2.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/VETROO K1 PANGOLIN 3.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/VETROO K1 PANGOLIN 4.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                                <p> <img src="img/VETROO K1 PANGOLIN 5.jpg" width="90%" height="90%" class="bd-placeholder-img rounded-circle" /> </p>
+                                            </div>
+                                            <div>
+                                                <hr>
+                                                <h1>‎$169.99</h1>
+                                                <hr>
+                                                <h2>Technical Details</h2>
+                                                <table class="table text-bg-dark">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Brand</td>
+                                                            <td>Vetroo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Motherboard Compatability</td>
+                                                            <td>Micro ATX</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case Type</td>
+                                                            <td>Mid Tower</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>Gray</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Material</td>
+                                                            <td>Tempered Glass</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Series</td>
+                                                            <td>K Series</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Weight</td>
+                                                            <td>‎22.05 Pounds</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Item Dimensions LxWxH</td>
+                                                            <td>‎23.62 x 8.46 x 21.65 inches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>About this item</h2>
+                                                <p>Unique Pangolin Design: The case was designed according to the shape of the pangolin, it makes your case different from others. Besides, the holes of the case can provide your case better airflow.</p>
+                                                <p>Dual Tempered Glass Side Panel: The 2pcs transparent tempered glass side panels can clearly show your internal components and it is easy to install with screws.</p>
+                                                <p>Superior cooling system: The case can support up to 7pcs 120mm fans and max 360mm water cooler, it provides your case better airflow and keeps your components cooling all the time. (NOTE: The fans are not included in the case)</p>
+                                                <p>Sufficient Internal Space: ATX, Micro-ATX, Mini-ATX motherboard support, it can be installed 2pcs SSD and 2pcs HDD drive bays, support CPU coolers up to 170mm tall and GPU up to 350mm long.</p>
+                                                <p>Multi-Functional I/O Panel: POWER /HD AUDIO /2x USB2.0 /USB3.0 on the I/O panel, it can provide you great flexibility for various mobile audio accessories.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- CHANGE data-bs-target --> <button class="btn btn-primary" data-bs-target="#exampleModalToggle2vk" data-bs-toggle="modal"> Check Order </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Modal Consult -->
+                                <!-- CHANGE id & aria-labelledby -->
+                                <div class="modal fade" id="exampleModalToggle2vk" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2vk" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-bg-dark">
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center ">
+                                                    <div class="card-header p-0">
+                                                        <div class="bg-dark text-white text-center py-2 ">
+                                                            <h3><i class="fa fa-store text-white bg-dar"></i> Check Form</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <form action="thanks.html">
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-desktop text-white bg-dark"></i> </div>
+                                                                    </div> <!-- CHANGE PLACEHOLDER --> <input type="text" class="form-control bg-dark text-white" placeholder="VETROO K1 PANGOLIN" readonly="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-list text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" min="1" max="10" placeholder="Amount (1-10)" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="input-group mb-2 ">
+                                                                    <div class="input-group-prepend ">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-user text-white bg-dark"></i> </div>
+                                                                    </div> <input type="text" class="form-control bg-dark text-white" placeholder="Name & Last Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-envelope text-white bg-dark"></i> </div>
+                                                                    </div> <input type="email" class="form-control bg-dark text-white" placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-phone text-white bg-dark"></i> </div>
+                                                                    </div> <input type="number" class="form-control bg-dark text-white" placeholder="+506 0000 0000" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text bg-dark"> <i class="fa fa-comment text-white bg-dark"></i> </div>
+                                                                    </div> <textarea class="form-control bg-dark text-white" placeholder="Tell us about the personal design of your case." required>
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center"> <button type="submit" class="btn btn-primary">Send</button> </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"> <button class="btn btn-primary" data-bs-target="#exampleModalTogglevk" data-bs-toggle="modal">Back to Details </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End 9th Product -->
+                        </div>
+                        <hr>
+                    </div>
+            </main>
+            <footer class="text-white text-center text-lg-start bg-dark">
+                <div class="container p-4">
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About company</h5>
+                            <p> GCC Gaming Computer Cases committed to supplying the best gaming pc cases and distributing exceptional quality components. </p>
+                            <p> With the best materials and designs on the market we want to achieve complete customer satisfaction. </p>
+                            <p> We are your best option to beautify your setup with the most modern designs and the most exceptional quality. </p>
+                            <hr>
+                            <div class="mt-4">
+                                <!-- Facebook --> <a type="button" href="https://www.facebook.com/pccasegear/" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook"></i></a> <a type="button" href="https://twitter.com/cubeor_cases?lang=en" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a> <a type="button" href="https://api.whatsapp.com/send/?phone=50684683532&text&type=phone_number&app_absent=0" class="btn btn-floating btn-light btn-lg"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Contact Info</h5>
+                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <li class="mb-3"> <span class="fa-li"><i class="fas fa-home"></i></span> <span class="ms-2">Puriscal, San Jose, Costa Rica</span> </li>
+                                <li class="mb-3"> <span class="fa-li"><i class="fas fa-envelope"></i></span> <a href="mailto:gcc.computer@gmail.com" class="ms-2">gcc.computer@gmail.com</a> </li>
+                                <li class="mb-3"> <span class="fa-li"><i class="fas fa-phone"></i></span><a href=tel:+50624160000 " class=" ms-2 ">+506 2416-0000 </a>
+                                </li>
+                            </ul>
+                            <hr> 
+                            <h5 class=" text-uppercase mb-4 ">Opening Hours</h5>
+                            <table class=" table text-center text-white ">
+                                <tbody class=" fw-normal ">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8am - 1am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 mb-4 mb-md-0 ">
+                            <h5 class=" text-uppercase mb-4 ">Google Maps</h5>
+                            <iframe src=" https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1965.5225032292087!2d-84.31559562202071!3d9.846587204459148!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1669430590438!5m2!1sen!2scr " 
+                                    width=" 400 " 
+                                    height=" 300 " 
+                                    style=" border:0; " 
+                                    allowfullscreen=" " 
+                                    loading=" lazy " 
+                                    referrerpolicy=" no-referrer-when-downgrade "></iframe>                            
+                        </div>
+                    </div>
+                </div>
+                <div class=" text-center p-3 " style=" background-color: rgba(0, 0, 0, 0.2); ">
+                    © 2022 GCC Copyright:
+                    <a class=" text-white " href=" index.html ">GCC.com</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
